@@ -1,10 +1,10 @@
 import React from 'react';
-import Aux from "../hoc/Aux";
+import AuxWrap from "../hoc/AuxWrap";
 import classes from './Layout.css'
 
 const Layout = (props) => {
     return (
-        <Aux>
+        <AuxWrap>
             <nav>
                 <div>toolbar</div>
                 <div>Side</div>
@@ -13,7 +13,7 @@ const Layout = (props) => {
             <main className="Content">
                 {props.children}
             </main>
-        </Aux>
+        </AuxWrap>
     );
 }
 

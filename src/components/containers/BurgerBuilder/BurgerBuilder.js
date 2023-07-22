@@ -1,12 +1,12 @@
 import React from 'react';
-import Aux from "../../hoc/Aux";
+import AuxWrap from "../../hoc/AuxWrap";
 import Burger from "../../Burger/Burger";
 function BurgerBuilder(props) {
     return (
-        <Aux>
+        <AuxWrap>
             <Burger/>
             <div>Burger Controls</div>
-        </Aux>
+        </AuxWrap>
     );
 }
 
