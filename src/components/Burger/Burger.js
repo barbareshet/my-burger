@@ -8,6 +8,7 @@ function Burger(props) {
             <BurgerIngredient type="meat"/>
             <BurgerIngredient type="cheese"/>
             <BurgerIngredient type="meat"/>
+            <BurgerIngredient type="pickles"/>
             <BurgerIngredient type="tomato"/>
             <BurgerIngredient type="salad"/>
             <BurgerIngredient type="bread-bottom"/>

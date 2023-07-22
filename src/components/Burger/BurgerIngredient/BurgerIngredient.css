@@ -119,3 +119,17 @@
     background: linear-gradient(#c72121, #ce5054);
     border-radius: 20px;
 }
+.Pickles{
+    width: 80%;
+    height: 3%;
+    margin: 2% auto;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.Pickles span{
+    background: linear-gradient(#456c45, #3a5023);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
