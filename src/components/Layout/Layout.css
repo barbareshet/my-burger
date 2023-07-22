@@ -1,0 +1,9 @@
+.Content{
+    margin-top: 16px;
+}
+nav{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}

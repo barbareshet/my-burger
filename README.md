@@ -1,3 +1,7 @@
+# About this project
+## My burger app
+#### based on [Eduonix Learning](https://www.eduonix.com/new_dashboard/react-the-complete-guide-incl-redux)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
