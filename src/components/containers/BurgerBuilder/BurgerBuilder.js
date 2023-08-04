@@ -5,6 +5,7 @@ import BuildControls from "../../Burger/BuildControls/BuildControls";
 import Modal from "../../UI/Modal/Modal";
 import Order from "../../Burger/Order/Order";
 import INGREDIENT_PRICES from "../../../const/ingerients";
+import fixedPrice from "../../../utils/fixedPrice";
 
 
 class BurgerBuilder extends Component {
@@ -73,7 +74,7 @@ class BurgerBuilder extends Component {
         this.setState({purchasing:false});
     }
     purchaseContinueHandler = () => {
-        alert('Order was sent')
+        alert(`Thank you for your order. You paid $${fixedPrice(this.state.totalPrice)}`)
     }
     render() {
         const disableInfo = {

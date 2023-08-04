@@ -1,6 +1,7 @@
 import React from 'react';
 import AuxWrap from "../../hoc/AuxWrap";
 import Button from "../../UI/Button/Button";
+import fixedPrice from "../../../utils/fixedPrice";
 const Order = (props) => {
 
 
@@ -20,7 +21,7 @@ const Order = (props) => {
             </ul>
             <h4 className="total">
                 <span style={{color:"#ce5054"}}>
-                    Total Price: ${props.totalPrice.toFixed(2)}
+                    Total Price: ${fixedPrice(props.totalPrice)}
                 </span>
             </h4>
             <div className="modal-footer">

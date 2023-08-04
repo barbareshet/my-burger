@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './BuildControls.css'
 import BuildControl from "./BuildControl/BuildControl";
+import fixedPrice from "../../../utils/fixedPrice";
 
 const controls = [
     {label:'Salad', type:'salad'},
@@ -15,7 +16,7 @@ const BuildControls = (props) => {
     return (
         <div className="BuildControls">
             <h3 className="totalPrice">
-                Total Price: ${totalPrice.toFixed(2)}
+                Total Price: ${fixedPrice(totalPrice)}
             </h3>
             {controls.map( (control,i) => {
                 return(
