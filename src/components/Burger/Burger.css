@@ -8,6 +8,26 @@
     font-weight: bold;
     font-size: 1.2rem;
 }
+.Burger::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+.Burger::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.Burger::-webkit-scrollbar-thumb {
+    background: #888;
+    max-height: 35px;
+}
+
+/* Handle on hover */
+.Burger::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+}
 @media screen and (min-width: 500px) and (min-height: 401px){
     .Burger{
         width: 450px;

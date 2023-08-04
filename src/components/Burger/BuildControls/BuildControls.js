@@ -11,7 +11,7 @@ const controls = [
     {label:'Tomato', type:'tomato'},
 ]
 const BuildControls = (props) => {
-    const {totalPrice, purchasable} = props
+    const {totalPrice, purchasable, placeOrder} = props
     return (
         <div className="BuildControls">
             <h3 className="totalPrice">
@@ -28,7 +28,12 @@ const BuildControls = (props) => {
                     />
                 )
             })}
-            <button className="place-order" disabled={!purchasable}>Place Order</button>
+            <button className="place-order"
+                    disabled={!purchasable}
+                    onClick={placeOrder}
+            >
+                Place Order
+            </button>
         </div>
     );
 }
