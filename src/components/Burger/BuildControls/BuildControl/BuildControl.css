@@ -16,10 +16,10 @@
     outline: none;
 }
 .BuildControl button:disabled{
-    background-color: #ac9980;
+    background-color: #deae6f;
     border: 1px solid #7e7365;
-    color: #ccc;
-    cursor: default;
+    color: #884115;
+    cursor: not-allowed;
 }
 .BuildControl .label{
     padding: 10px;
