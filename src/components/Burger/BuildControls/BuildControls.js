@@ -11,11 +11,20 @@ const controls = [
     {label:'Tomato', type:'tomato'},
 ]
 const BuildControls = (props) => {
+
     return (
         <div className="BuildControls">
+            <h3 className="totalPrice">
+                ${props.totalPrice}
+            </h3>
             {controls.map( (control,i) => {
                 return(
-                    <BuildControl key={control.label} label={control.label}/>
+                    <BuildControl
+                        key={control.label}
+                        label={control.label}
+                        added={() => props.addIngredient(control.type)}
+                        removed={()=>props.removedIngredient(control.type)}
+                    />
                 )
             })}
         </div>
