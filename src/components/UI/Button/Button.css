@@ -1,0 +1,15 @@
+.Button{
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    width: 125px;
+    cursor: pointer;
+}
+.place-order{
+    background-color: #228c1d;
+    color: #ffffff;
+}
+.cancel{
+    background-color: #bf3813;
+    color: #ffffff;
+}

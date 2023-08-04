@@ -4,16 +4,9 @@ import Burger from "../../Burger/Burger";
 import BuildControls from "../../Burger/BuildControls/BuildControls";
 import Modal from "../../UI/Modal/Modal";
 import Order from "../../Burger/Order/Order";
+import INGREDIENT_PRICES from "../../../const/ingerients";
 
 
-const INGREDIENT_PRICES = {
-    salad: 0.2,
-    cheese: 0.4,
-    meat: 1.6,
-    bacon: 0.7,
-    pickles: 0.2,
-    tomato: 0.2
-}
 class BurgerBuilder extends Component {
     state = {
         ingredients:{
@@ -79,6 +72,9 @@ class BurgerBuilder extends Component {
     purchaseCancelHandler = () =>{
         this.setState({purchasing:false});
     }
+    purchaseContinueHandler = () => {
+        alert('Order was sent')
+    }
     render() {
         const disableInfo = {
             ...this.state.ingredients
@@ -88,8 +84,16 @@ class BurgerBuilder extends Component {
         }
         return(
             <AuxWrap>
-                <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
-                    <Order title="Your Order Information" description="See Your Order information bellow:" ingredients={this.state.ingredients} totalPrice={this.state.totalPrice}/>
+                <Modal show={this.state.purchasing}
+                       modalClosed={this.purchaseCancelHandler}
+                >
+                    <Order title="Your Order Information"
+                           description="See Your Order information bellow:"
+                           ingredients={this.state.ingredients}
+                           totalPrice={this.state.totalPrice}
+                           handleCancelOrder={this.purchaseCancelHandler}
+                           handleContiniueOrder={this.purchaseContinueHandler}
+                    />
                 </Modal>
                 <Burger ingredients={this.state.ingredients}/>
                 <BuildControls

@@ -1,6 +1,9 @@
 import React from 'react';
 import AuxWrap from "../../hoc/AuxWrap";
+import Button from "../../UI/Button/Button";
 const Order = (props) => {
+
+
     const ingredientSummary = Object.keys(props.ingredients)
         .map(igKey => {
             return <li key={igKey}><span style={{textTransform:"capitalize"}}>{igKey} : {props.ingredients[igKey]}</span></li>
@@ -20,7 +23,10 @@ const Order = (props) => {
                     Total Price: ${props.totalPrice.toFixed(2)}
                 </span>
             </h4>
-            <button>Checkout</button>
+            <div className="modal-footer">
+                <Button type="place-order" handleButtonClick={props.handleContiniueOrder}>Place Order</Button>
+                <Button type="cancel" handleButtonClick={props.handleCancelOrder}>Cancel</Button>
+            </div>
         </AuxWrap>
     )
 };
