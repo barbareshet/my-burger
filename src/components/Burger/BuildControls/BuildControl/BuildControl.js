@@ -5,9 +5,7 @@ const BuildControl = (props) => {
     return (
         <div className="BuildControl">
             <din className="label">{props.label}</din>
-            {
-                !disabled && <button className="remove" onClick={props.removed}>Less</button>
-            }
+            <button className="remove" onClick={props.removed} disabled={disabled}>Less</button>
             <button className="add" onClick={props.added}>More</button>
         </div>
     );

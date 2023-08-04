@@ -13,3 +13,19 @@
     color: #fff;
     font-size: 24px;
 }
+.BuildControls .place-order{
+    background-color: #dad735;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #966909;
+    color: #966909;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 2px #966909;
+    margin: 15px auto;
+    font-weight: bold;
+}
+.BuildControls .place-order:disabled{
+    background-color: #eae86e;
+    cursor: not-allowed;
+}

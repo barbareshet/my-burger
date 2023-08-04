@@ -11,11 +11,11 @@ const controls = [
     {label:'Tomato', type:'tomato'},
 ]
 const BuildControls = (props) => {
-    const {totalPrice} = props
+    const {totalPrice, purchasable} = props
     return (
         <div className="BuildControls">
             <h3 className="totalPrice">
-                ${totalPrice.toFixed(2)}
+                Total Price: ${totalPrice.toFixed(2)}
             </h3>
             {controls.map( (control,i) => {
                 return(
@@ -28,6 +28,7 @@ const BuildControls = (props) => {
                     />
                 )
             })}
+            <button className="place-order" disabled={!purchasable}>Place Order</button>
         </div>
     );
 }
