@@ -3,9 +3,10 @@ import AuxWrap from "../../hoc/AuxWrap";
 import classes from './Modal.css'
 import Backdrop from "../Backdrop/Backdrop";
 const Modal = (props) => {
+    const {modalClosed, show} = props
     return (
         <AuxWrap>
-            <Backdrop show={props.show}/>
+            <Backdrop show={show} handleBackdrop={modalClosed}/>
             <div
                 className="Modal"
                 style={{
