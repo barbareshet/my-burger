@@ -18,8 +18,27 @@
 .LogoWrap{
     height: 80%;
 }
+.MobileMenuTrigger{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 5px;
+}
+.MobileMenuTrigger > div{
+    height: 1px;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1px;
+}
 @media screen and (max-width: 500px){
     .Toolbar nav{
+        display: none;
+    }
+}
+@media screen and (min-width: 501px){
+    .MobileMenuTrigger{
         display: none;
     }
 }

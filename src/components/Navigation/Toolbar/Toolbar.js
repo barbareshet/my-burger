@@ -5,7 +5,11 @@ import NavigationItems from "../NavigationItems/NavigationItems";
 const Toolbar = (props) => {
     return (
         <header className="Toolbar">
-            <div>Menu</div>
+            <div onClick={props.handleMenuClick} className="MobileMenuTrigger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <div className="LogoWrap">
                 <Logo/>
             </div>

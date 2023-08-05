@@ -8,16 +8,19 @@ import SideMenu from "../Navigation/SideMenu/SideMenu";
 class Layout extends Component {
 
     state = {
-        showSideMenu: true
+        showSideMenu: false
     }
     sideMenuHandler = () => {
         this.setState({showSideMenu: false})
+    }
+    handleMenuClick = () => {
+        this.setState({showSideMenu: true})
     }
     render() {
 
         return (
             <AuxWrap>
-                <Toolbar/>
+                <Toolbar handleMenuClick={this.handleMenuClick}/>
                 <SideMenu
                     open={this.state.showSideMenu}
                     closed={this.sideMenuHandler}
