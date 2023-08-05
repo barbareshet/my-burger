@@ -1,0 +1,29 @@
+.SideMenu{
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    transition: transform .3s ease-out;
+}
+
+@media screen and (min-width: 500px){
+    .SideMenu{
+        display: none;
+    }
+}
+.Open{
+    transform: translateX(0);
+}
+.Close{
+    transform: translateX(-100%);
+}
+.SideMenu .LogoWrap{
+    height: 10%;
+    display: flex;
+}

@@ -15,3 +15,11 @@
 .Toolbar nav{
     height: 100%;
 }
+.LogoWrap{
+    height: 80%;
+}
+@media screen and (max-width: 500px){
+    .Toolbar nav{
+        display: none;
+    }
+}

@@ -6,7 +6,9 @@ const Toolbar = (props) => {
     return (
         <header className="Toolbar">
             <div>Menu</div>
-            <Logo/>
+            <div className="LogoWrap">
+                <Logo/>
+            </div>
             <nav>
                 <NavigationItems/>
             </nav>
