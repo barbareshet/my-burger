@@ -1,0 +1,26 @@
+.nav-item{
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.nav-item .nav-link{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 16px 10px;
+    border-bottom: 4px solid transparent;
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out;
+}
+.nav-item .nav-link:hover,
+.nav-item .nav-link:active,
+.nav-item .nav-link.active{
+    background-color: #8f5c2c;
+    border-bottom: 4px solid #40a4c8;
+    color: white;
+}

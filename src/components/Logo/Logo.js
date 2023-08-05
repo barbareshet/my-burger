@@ -4,7 +4,9 @@ import classes from './Logo.css'
 const Logo = (props) => {
     return (
         <div className="Logo">
-            <img src={LogoImage} alt="logo"/>
+            <a href="/" className="LogoLink">
+                <img src={LogoImage} alt="logo"/>
+            </a>
         </div>
     );
 }
