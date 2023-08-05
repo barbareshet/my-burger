@@ -14,7 +14,9 @@ class Layout extends Component {
         this.setState({showSideMenu: false})
     }
     handleMenuClick = () => {
-        this.setState({showSideMenu: true})
+        this.setState((prevState) => {
+            return {showSideMenu: !this.state.showSideMenu}
+        })
     }
     render() {
 
